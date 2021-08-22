@@ -21,8 +21,10 @@ const Home = () => {
         <div className="background-dark">
           <div className="container center">
             <br />
+            <br />
             <p>Gunship is an intense action adventure game with a unique blend of physics based movement and top-down shooter mechanics.</p>
             <br/>
+            <br />
             <br/>
             <a href="https://mactinite.itch.io/gunship" className="button">Try out the demo today!</a>
             <h1>Fly</h1>
@@ -38,8 +40,15 @@ const Home = () => {
               Set in a massive abandoned alien space station, explore and find secrets that will aid you in your mission, and uncover the truth of The Station.
             </p>
             <br />
+            <br />
+            <br />
           </div >
         </div>
+        <footer>
+          <div className="content">
+            <p>Blah Blah</p>
+          </div>
+        </footer>
       </div>
     </>
   )

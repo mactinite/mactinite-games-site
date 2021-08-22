@@ -55,6 +55,27 @@ h1 {
   margin-top: 100px;
 }
 
+footer {
+  height: 150px;
+  max-height: 150px;
+  min-height: 50px;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position:relative;
+}
+
+footer.content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  height: 100%;
+}
+
 .hero {
   height: 150px;
   max-height: 150px;
@@ -78,8 +99,10 @@ h1 {
   height: 100%;
 }
 
+footer::before,
 .hero::before {
   content: "";
+  background-size: cover;
   background: url('/bg-pattern.png') repeat fixed;
   position: absolute;
   top: 0;
@@ -120,6 +143,7 @@ h1 {
   background-color: black;
   position: relative;
   z-index: -1;
+  padding: 1px;
 }
 
 .space-bg::before{
