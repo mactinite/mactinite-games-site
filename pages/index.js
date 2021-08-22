@@ -1,10 +1,10 @@
 
 const Home = () => (
-  <div className="home">
-      Mactinite Games
-      website
-      yes this is it 
+  <>
+  <div className="hero">
+    <img src ="/mactinite_games.png"/>
   </div>
+  </>
 );
 
 export default Home;
