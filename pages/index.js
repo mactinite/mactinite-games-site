@@ -6,12 +6,16 @@ const Home = () => {
   return (
     <>
       <HeroHeader scrollAction={150}>
-        <img src="/mactinite_games.png" alt="Mactinite Games" style={{ height: "100%" }} />
+        <figure className="logo">
+          <img src="/mactinite_games.png" alt="Mactinite Games"/>
+        </figure>
       </HeroHeader>
       <div className="feature space-bg">
         <div className="container center" >
-        <h1>COMING SOON</h1>
-          <img src="/GunshipLogo_Transparent.png" alt="Gunship: Zero G combat" style={{ height: "100%", maxWidth: "100%", marginBottom: "100px" }} />
+          <h1>COMING SOON</h1>
+          <figure>
+            <img src="/GunshipLogo_Transparent.png" alt="Gunship: Zero G combat" style={{ height: "100%", maxWidth: "100%", marginBottom: "100px" }} />
+          </figure>
         </div >
       </div>
       <div className="feature">
@@ -20,9 +24,9 @@ const Home = () => {
             <br />
             <br />
             <p>Gunship is an intense action adventure game with a unique blend of physics based movement and top-down shooter mechanics.</p>
-            <br/>
             <br />
-            <br/>
+            <br />
+            <br />
             <a href="https://mactinite.itch.io/gunship" className="button">Try out the demo on itch.io</a>
             <h1>Fly</h1>
             <p>
