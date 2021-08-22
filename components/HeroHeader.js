@@ -15,7 +15,7 @@ export const HeroHeader = (props = { scrollAction: 250, children: null }) => {
     })
 
     const onScroll = () => {
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const scrollTop = window.pageYOffset || _containerDOM.current.scrollTop;
         if (props.scrollAction >= scrollTop) {
             const step = scrollPosition - scrollTop;
             const actualHeight = _containerDOM.current.offsetHeight;
