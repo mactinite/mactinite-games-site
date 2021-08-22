@@ -1,8 +1,8 @@
 import { useEffect, useState, useRef } from "react";
 import { HeroHeader } from '../components/HeroHeader';
 const Home = () => {
-
-
+  const now = new Date(Date.now());
+  const year = now.getFullYear();
   return (
     <>
       <HeroHeader scrollAction={150}>
@@ -13,10 +13,7 @@ const Home = () => {
         <h1>COMING SOON</h1>
           <img src="/GunshipLogo_Transparent.png" alt="Gunship: Zero G combat" style={{ height: "100%", maxWidth: "100%", marginBottom: "100px" }} />
         </div >
-
       </div>
-
-
       <div className="feature">
         <div className="background-dark">
           <div className="container center">
@@ -26,7 +23,7 @@ const Home = () => {
             <br/>
             <br />
             <br/>
-            <a href="https://mactinite.itch.io/gunship" className="button">Try out the demo today!</a>
+            <a href="https://mactinite.itch.io/gunship" className="button">Try out the demo on itch.io</a>
             <h1>Fly</h1>
             <p>
               Avoid lasers, dodge missiles but be careful not to crash!
@@ -39,14 +36,15 @@ const Home = () => {
             <p>
               Set in a massive abandoned alien space station, explore and find secrets that will aid you in your mission, and uncover the truth of The Station.
             </p>
-            <br />
+            <h1>Ready to fly?</h1>
+            <a href="https://mactinite.itch.io/gunship" className="button">Try out the demo on itch.io</a>
             <br />
             <br />
           </div >
         </div>
         <footer>
           <div className="content">
-            <p>Blah Blah</p>
+            <p className="copy">&copy; MACTINITE GAMES LLC. {year}</p>
           </div>
         </footer>
       </div>

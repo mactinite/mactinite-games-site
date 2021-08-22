@@ -56,8 +56,8 @@ h1 {
 }
 
 footer {
-  height: 150px;
-  max-height: 150px;
+  height: 50px;
+  max-height: 50px;
   min-height: 50px;
   left: 0;
   right: 0;
@@ -68,12 +68,18 @@ footer {
   position:relative;
 }
 
-footer.content {
+footer .content {
   display: flex;
   flex-direction: column;
   position: relative;
   z-index: 1;
   height: 100%;
+  justify-content: flex-end;
+  padding: 8px;
+}
+
+.content .copy {
+  font-size: 11px;
 }
 
 .hero {
