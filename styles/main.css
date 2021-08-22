@@ -3,8 +3,7 @@
 }
 
 body {
-  background: url("/bg-pattern.png") repeat scroll;
-  background-color: #292933;
+  background-color: #272742;
   font-family: 'PT Sans', sans-serif;
   color: #EEFFFF;
   max-width: 100%;
@@ -17,6 +16,7 @@ body {
     margin: 0 auto;
   }
 }
+
 /* Laptops */
 @media only screen and (max-width: 1024px) {
   .container {
@@ -24,6 +24,7 @@ body {
     margin: 0 auto;
   }
 }
+
 /* Tablets */
 @media only screen and (max-width: 768px) {
   .container {
@@ -36,10 +37,17 @@ body {
 @media only screen and (max-width: 480px) {
   .container {
     width: 300px;
-    margin: 0  auto;
+    margin: 0 auto;
   }
 }
 
+.container.center {
+  text-align: center;
+}
+
+.background-dark {
+  background-color: #08141e;
+}
 
 h1 {
   font-size: 36px;
@@ -48,14 +56,92 @@ h1 {
 }
 
 .hero {
-  min-width: 100%;
-  min-width: 100%;
+  height: 150px;
+  max-height: 150px;
+  min-height: 50px;
+
+  background-size: cover;
+  left: 0;
+  right: 0;
+  position: fixed;
+  top: 0;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
-.hero img {
-  width: 20em;
-  
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  height: 100%;
+}
+
+.hero::before {
+  content: "";
+  background: url('/bg-pattern.png') repeat fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: background 400ms;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.button {
+  text-decoration: none;
+  color: #EEFFFF;
+  min-width: 75px;
+  height: 45px;
+  border: 1px solid #EEFFFF;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 5px;
+  font-size: 18px;
+  margin: 15px;
+  padding: 8px 16px;
+  transition: all .3s;
+}
+
+.button:hover {
+  background-color: #EEFFFF;
+  color: #272742;
+}
+
+.feature {
+  min-width: 100%;
+  min-height : 250px;
+}
+
+.feature.space-bg {
+  background-color: black;
+  position: relative;
+  z-index: -1;
+}
+
+.space-bg::before{
+  content: "";
+  position: absolute;
+  background: url('/SpaceDustTiling.png') repeat fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.space-bg::after{
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: url('/AsteroidWallHuge.png') repeat-x bottom;
+  z-index: -1;
+  pointer-events: none;
 }
