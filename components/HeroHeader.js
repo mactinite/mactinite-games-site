@@ -7,7 +7,7 @@ export const HeroHeader = (props = { scrollAction: 250, children: null }) => {
     
 
     useEffect(() => {
-        
+        scrollPosition = window.pageYOffset || _containerDOM.current.scrollTop;
         window.addEventListener('scroll', onScroll)
         return function cleanup() {
             window.removeEventListener('scroll', onScroll)
