@@ -10,7 +10,7 @@ const Home = () => {
         <title>Mactinite Games - Gunship Coming Soon!</title>
         <meta name='description' content="Mactinite Games is a solo indie game developer based in Seattle, US."/>
       </Head>
-        <HeroHeader scrollAction={150}>
+        <HeroHeader maxHeight={150} minHeight={50}>
           <figure className="logo">
             <img src="/mactinite_games.png" alt="Mactinite Games" />
           </figure>
