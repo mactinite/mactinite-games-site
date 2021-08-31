@@ -8,10 +8,19 @@
     "start": "next start"
   },
   "dependencies": {
+    "@react-spring/parallax": "^9.2.4",
+    "@react-spring/web": "^9.2.4",
+    "@sanity/block-content-to-react": "^3.0.0",
+    "@sanity/client": "^2.16.0",
+    "@sanity/image-url": "^0.140.22",
     "isomorphic-unfetch": "^3.0.0",
     "next": "^10.0.7",
     "react": "^17.0.2",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "react-spring": "^9.2.4"
+  },
+  "peerDependencies": {
+    "react-spring": "^9.2.4"
   },
   "devDependencies": {
     "serve": "^11.3.2"
