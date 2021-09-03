@@ -2,8 +2,6 @@ import '../styles/main.css';
 import { HeroHeader } from '../components/HeroHeader';
 import Link from 'next/link';
 import 'highlight.js/styles/monokai.css';
-import Image from 'next/image';
-import logo from '../public/mactinite_games.png';
 import NavButton from '../components/NavButton';
 // This default export is required in a new `pages/_app.js` file.
 export default function MyApp({ Component, pageProps }) {
