@@ -16,7 +16,7 @@ export default function MyApp({ Component, pageProps }) {
             <nav className="flex flex-row max-h-full h-full space-x-8">
               <div className="flex flex-row max-h-full h-full">
                 <Link href="/" >
-                  <img src="/mactinite_games.png" alt="Mactinite Games Logo" className="my-auto max-h-full" layout='fixed' />
+                  <img src="/mactinite_games.png" alt="Mactinite Games Logo" className="my-auto max-h-full" layout='fixed' width="252px" height="200px" />
                 </Link>
               </div>
               <div className="flex space-x-4 my-auto">
