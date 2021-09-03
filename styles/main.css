@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
   box-sizing: border-box;
 }
@@ -7,42 +11,6 @@ body {
   font-family: 'Montserrat', sans-serif;
   color: #EEFFFF;
   max-width: 100%;
-}
-
-/* Desktop */
-@media only screen and (min-width: 1025px) {
-  .container {
-    width: 1000px;
-    margin: 0 auto;
-  }
-}
-
-/* Laptops */
-@media only screen and (max-width: 1024px) {
-  .container {
-    width: 748px;
-    margin: 0 auto;
-  }
-}
-
-/* Tablets */
-@media only screen and (max-width: 768px) {
-  .container {
-    width: 440px;
-    margin: 0 auto;
-  }
-}
-
-/* Mobile */
-@media only screen and (max-width: 480px) {
-  .container {
-    width: 300px;
-    margin: 0 auto;
-  }
-}
-
-.container.center {
-  text-align: center;
 }
 
 .background-dark {
@@ -67,40 +35,18 @@ h1 {
   backdrop-filter: blur(15px) brightness(0.8);
 }
 
-.blog-list{
-  display: flex;
-  padding: 16px 0px;
-  flex-wrap: wrap;
-  flex-grow: 0;
-  justify-content: flex-start;
-}
-
 .blog-card{
   background-color: #08141e8a;
   border-radius: 6px;
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 250px;
-  box-shadow: 3px 3px 10px 1px #0000009c;
-  margin: 8px;
-  max-height: 500px;
 }
 .blog-card h2{
   height: 30px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-
-.card {
-  background: #fff;
-  border-radius: 2px;
-  display: inline-block;
-  height: 300px;
-  margin: 1rem;
-  position: relative;
-  width: 300px;
 }
 
 .card-1 {
@@ -134,23 +80,10 @@ h1 {
   padding: 16px;
 }
 
-.blog-card h2 {
-  font-size: 1.3em;
-}
 
-.blog-card .sub-head{
-  font-size: 0.7em;
-}
-.blog-card a{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  justify-self: flex-end;
-  margin: auto px;
-}
 .blog-preview {
   font-size: 0.75em;
-  height: 100px;
+  height: 32px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -160,7 +93,7 @@ h1 {
   position: relative;
   height: 140px;
   width: 100%;
-  
+  max-height: 140px;
 }
 
 .blog-preview-img img {

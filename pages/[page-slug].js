@@ -40,9 +40,11 @@ export async function getStaticProps(context) {
 const Page = ({title, body}) => {
     return (
         <>
-            <div className="container">
-                <h1>{title}</h1>
-                <BlockContent blocks={body} />
+            <div className="container w-10/12 mx-auto my-8">
+                <div className="prose prose-sm md: lg:prose-md lg:prose-xl">
+                <h1 className="mt-0">{title}</h1>
+                <BlockContent blocks={body}/>
+                </div>
             </div>
         </>
     )
