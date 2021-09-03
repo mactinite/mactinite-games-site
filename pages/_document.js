@@ -30,7 +30,7 @@ class MyDocument extends Document {
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
-            gtag('config', 'G-GKBHBKX7HB');}}>
+            gtag('config', 'G-GKBHBKX7HB');
           `}} />
         </Head>
         <body>
