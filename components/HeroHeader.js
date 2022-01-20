@@ -1,4 +1,3 @@
-import React from 'react'
 import { useEffect, useLayoutEffect, useState, useRef } from "react";
 let scrollPosition = 0;
 export const HeroHeader = (props = { maxHeight: 250, minHeight: 50, children: null }) => {

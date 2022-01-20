@@ -1,0 +1,36 @@
+.cartridge {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 325px;
+    width: 300px;
+    background-color: rgb(84, 95, 104);
+    box-shadow: 5px 5px 0px 4px rgb(58, 62, 65);
+}
+
+.content {
+    background-color: rgba(0, 0, 0, 0.6);
+    filter: blur(0.8);
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 24px;
+    text-shadow: rgba(0, 0, 0, 0.5) 1 1;
+}
+
+.cartridgeBrand{
+    background-color: rgb(58, 62, 65);
+    border-radius: 32px;
+    margin: 16px 16px ;
+    text-align: center;
+    height: 36px;
+    font-size: x-large;
+}
+
+.cartridgeLabel{
+    width: 80%;
+    height: 75%;
+    margin: auto 32px;
+}
+
+  

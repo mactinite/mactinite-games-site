@@ -81,13 +81,6 @@ h1 {
 }
 
 
-.blog-preview {
-  font-size: 0.75em;
-  height: 32px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
 
 .blog-preview-img {
   position: relative;

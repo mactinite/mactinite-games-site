@@ -1,6 +1,7 @@
 import '../styles/main.css';
 import { HeroHeader } from '../components/HeroHeader';
 import Link from 'next/link';
+import Image from 'next/image'
 import 'highlight.js/styles/monokai.css';
 import NavButton from '../components/NavButton';
 // This default export is required in a new `pages/_app.js` file.
@@ -10,16 +11,16 @@ export default function MyApp({ Component, pageProps }) {
   const year = now.getFullYear();
   return (
     <div className="flex-wrapper">
-      <HeroHeader maxHeight={200} minHeight={60}>
+      <HeroHeader maxHeight={200} minHeight={100}>
         {(scrollValue) => {
           return (
-            <nav className="flex flex-row max-h-full h-full space-x-8">
+            <nav className="flex flex-row max-h-full h-full space-x-8 justify-around p-4">
               <div className="flex flex-row max-h-full h-full">
                 <Link href="/" >
-                  <img src="/mactinite_games.png" alt="Mactinite Games Logo" className="my-auto max-h-full" layout='fixed' width="252px" height="200px" />
+                  <img src="/mactinite_games.png" alt="Mactinite Games Logo" className="object-contain"/>
                 </Link>
               </div>
-              <div className="flex space-x-4 my-auto">
+              <div className={`flex space-x-4 my-auto`}>
                 <NavButton href="/about">About</NavButton>
                 <NavButton href="/blog">Blog</NavButton>
                 <NavButton href="/games">Games</NavButton>
